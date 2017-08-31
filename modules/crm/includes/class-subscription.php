@@ -393,7 +393,8 @@ class Subscription {
                 $subs_args = [
                     'group_id' => $group_id,
                     'user_id'  => $contact_id,
-                    'status'   => $status
+                    'status'   => $status,
+                    'hash'     => $hash
                 ];
 
                 $subscribed_groups[] = erp_crm_create_new_contact_subscriber( $subs_args );
